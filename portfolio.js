@@ -36,3 +36,11 @@ function manageBox(){
         ele.style.display = "block";
     });
 }
+// skills section
+let skillItem = document.querySelectorAll('.skill');
+
+skillItem.forEach((skill)=>{
+    skill.querySelector('.head').addEventListener('click', ()=>{
+        skill.querySelector('.items').classList.toggle('hide');
+    });
+});
