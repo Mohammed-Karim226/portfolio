@@ -631,25 +631,56 @@ transition:width .3s ease;
 }
 /* end latest work */
 
-/* footer */
-.footer{
-    height: 50px;
+/* let's talk */
+.talk{
     margin-top: 50px;
-    border-top: 1px solid var(--first-color);
+    margin-bottom: 50px;
 }
-.footer ul{
-    margin: 5px auto;
-    text-align: center;
+.talk .container{}
+.talk .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
 }
-.footer ul li{
-    display: inline-block;
-    padding-left: 10px;
+.talk .container form input{
+    padding: 12px;
+    width: 400px;
+    border: .01px solid #ededed;
 }
-.footer ul li a i{
-    font-size: 30px;
-    color: #fcc520;
-    transition: .3s ease-in-out;
+.talk .container form input:focus{
+    outline: none;
+
+
 }
-.footer ul li a i:hover{
-    color: var(--first-color);
+.talk .container form input::placeholder,
+.talk .container form textarea::placeholder{
+    transition: .3s;
+    opacity: .7;
 }
+.talk .container form input:focus::placeholder,
+.talk .container form textarea:focus::placeholder{
+    opacity: 0;
+}
+.talk .container form textarea{
+    padding: 12px;
+    width: 400px;
+    height: 200px;
+    border: .01px solid #ededed;
+}
+.talk .container form textarea:focus{
+    outline: none;
+}
+.talk .container form [type="submit"]{
+    outline: none;
+    border: .01px solid #ededed;
+    background-color: #f8be0e;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.talk .container form [type="submit"]:hover{
+    background-color: var(--first-color);
+}
+/* end talk */
