@@ -649,6 +649,11 @@ transition:width .3s ease;
     width: 400px;
     border: .01px solid #ededed;
 }
+@media(max-width:767px){
+    .talk .container form input{
+        width: 80%;
+    }
+}
 .talk .container form input:focus{
     outline: none;
 
@@ -668,6 +673,11 @@ transition:width .3s ease;
     width: 400px;
     height: 200px;
     border: .01px solid #ededed;
+}
+@media(max-width:767px){
+    .talk .container form textarea{
+        width: 80%;
+    }
 }
 .talk .container form textarea:focus{
     outline: none;
